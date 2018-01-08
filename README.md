@@ -4,9 +4,20 @@
 
 ## Purpose
 
+Expose an ES6 module shim for the global `Sugar` instance's `Date` and all defined locales.
 
-## DOCS
+## Installation
 
+```bash
+$ ember install ember-sugar-date-shim
+```
+### Requirements
+
+* Ember >= 1.13.0
+
+### Dependencies
+
+* The latest release version of the `sugar-date` NPM package.
 
 ### Tested Against
 
@@ -18,6 +29,24 @@
 [![ember-release](https://img.shields.io/badge/ember--try-ember--release-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-sugar-date-shim)
 [![ember-beta](https://img.shields.io/badge/ember--try-ember--beta-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-sugar-date-shim)
 [![ember-canary](https://img.shields.io/badge/ember--try-ember--canary-brightgreen.svg)](https://circleci.com/gh/cybertoothca/ember-sugar-date-shim)
+
+## Usage
+
+Import the Sugar global instance in your controller, route, or component js-file:
+
+```javascript
+import Sugar from 'ember-sugar-date';
+```
+
+Then somewhere in your js-code, you can use the `Sugar.Date` object as you normally would.  For example:
+
+```javascript
+return Sugar.Date.full(new Date());
+```
+
+### Sugar.js Dates Documentation
+
+[Sugar.js Dates](https://sugarjs.com/dates/#/Usage)
 
 # Collaboration Information
 
