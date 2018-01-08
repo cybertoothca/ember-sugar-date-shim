@@ -32,8 +32,8 @@ module.exports = {
     app.import('vendor/ember-sugar-date-shim/locales/pt.js');
     app.import('vendor/ember-sugar-date-shim/locales/ru.js');
     app.import('vendor/ember-sugar-date-shim/locales/sv.js');
-    app.import('vendor/ember-sugar-date-shim/locales/zh-CN.js');
-    app.import('vendor/ember-sugar-date-shim/locales/zh-TW.js');
+    app.import('vendor/ember-sugar-date-shim/locales/zh-cn.js');
+    app.import('vendor/ember-sugar-date-shim/locales/zh-tw.js');
     app.import('vendor/shims/ember-sugar-date.js');
   }
 };
